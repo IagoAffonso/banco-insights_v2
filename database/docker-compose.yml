@@ -1,0 +1,71 @@
+version: '3.8'
+
+services:
+  # PostgreSQL database for local development
+  postgres:
+    image: postgres:15-alpine
+    container_name: banco_insights_db
+    environment:
+      POSTGRES_DB: banco_insights
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./schema:/docker-entrypoint-initdb.d/schema
+      - ./migrations:/docker-entrypoint-initdb.d/migrations
+    networks:
+      - banco_insights_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d banco_insights"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Supabase local development (optional)
+  supabase:
+    image: supabase/studio:latest
+    container_name: banco_insights_supabase
+    environment:
+      SUPABASE_URL: http://localhost:54321
+      SUPABASE_ANON_KEY: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6ImFub24iLCJleHAiOjE5ODM4MTI5OTZ9.CRXP1A7WOeoJeXxjNni43kdQwgnWNReilDMblYTn_I0
+      SUPABASE_SERVICE_ROLE_KEY: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZS1kZW1vIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImV4cCI6MTk4MzgxMjk5Nn0.EGIM96RAZx35lJzdJsyH-qQwv8Hdp7fsn3W0YpN81IU
+      POSTGRES_HOST: postgres
+      POSTGRES_DB: banco_insights
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_PORT: 5432
+    ports:
+      - "3001:3000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - banco_insights_network
+
+  # pgAdmin for database management (optional)
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: banco_insights_pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@bancoinights.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    ports:
+      - "5050:80"
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - banco_insights_network
+
+volumes:
+  postgres_data:
+  pgadmin_data:
+
+networks:
+  banco_insights_network:
+    driver: bridge

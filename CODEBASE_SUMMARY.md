@@ -70,6 +70,60 @@
 - **CORS origins:** Set to local Next.js ports; will need production origins added.
 
 **Likely Next Steps (from roadmap + code state)**
+** Next Steps **
+**Market Share Dashboard**
+- Make the dashboard on the front end interactive and responsive to changes in parameters like metric, number of institutions selected, add a new institution customized (take a look at the exact parameters that need to work on the MVP plotting.py file )
+
+def plot_market_share(df,feature='Quantidade de clientes com operações ativas', top_n=10, custom_selected_institutions=None, initial_year=None,drop_nubank=0):
+    """
+    Creates a stacked area plot showing the market share evolution over time for financial institutions for selected metric.
+
+    Parameters:
+    -----------
+    df : pandas.DataFrame # Preloaded dataframe in the function #########
+        Input dataframe containing the raw financial data with columns:
+        - NomeRelatorio_Grupo_Coluna: The report category/metric name
+        - AnoMes: Date column
+        - NomeInstituicao: Institution name
+        - Saldo: Balance/value column
+
+    feature : str
+        Feature name to analyze. Must be one of the keys in feature_name_dict.
+        Examples: 'Carteira de Crédito Pessoa Física', 'Lucro Líquido', etc.
+
+    top_n : int, optional (default=10)
+        Number of top institutions to show separately in the plot.
+        Remaining institutions will be grouped into "Others".
+
+    custom_selected_institutions : list of str, optional (default=None)
+        List of institution names to always include in the plot, regardless of their ranking.
+        These will be shown in addition to the top institutions up to top_n.
+
+    initial_year : int, optional (default=None)
+        Starting year for the analysis. If provided, data before this year will be filtered out.
+
+    drop_nubank : int, optional (default=0)
+        Controls Nubank filtering:
+        - 0: Keep both Nubank entities
+        - 1: Drop "NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO"
+        - 2: Drop "NUBANK"
+
+    Returns:
+    --------
+    tuple:
+        - plotly.graph_objects.Figure: Interactive plot showing market share evolution
+        - pandas.DataFrame: Pivot table containing the market share data used in the plot,
+                          with quarters as index and institutions as columns
+
+    Notes:
+    ------
+    - The plot is a stacked area chart where each area represents an institution's market share
+    - Market shares are calculated quarterly as: (institution_value / total_market_value) * 100
+    - Institutions are sorted by their most recent market share
+    - The plot includes hover information showing exact market share values
+    - Legend names are truncated to 15 characters for better visualization
+
+    """
 - **Infra/config**
   - Add shared `.env` and expose `NEXT_PUBLIC_API_BASE_URL`; replace hardcoded URLs in frontend.
   - Align ports (choose 8000 or 8001) and update CORS/README accordingly.
@@ -95,3 +149,5 @@
 - Frontend: `cd frontend && npm install && npm run dev` then open `http://localhost:3000`
 - Data: Ensure `bacen_project_v1/data/*.csv` remain present for the backend to load.
 
+
+bash scripts/dev.sh

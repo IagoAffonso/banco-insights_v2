@@ -30,13 +30,13 @@ FastAPI backend for the Banco Insights 2.0 platform, providing Brazilian banking
 pip install -r requirements.txt
 
 # Run development server
-uvicorn main:app --reload
+uvicorn main:app --reload --port 8001
 
 # Or run directly
 python main.py
 ```
 
-The API will be available at http://localhost:8000
+The API will be available at http://localhost:8001
 
 ## Market Share Parameters
 
@@ -54,15 +54,15 @@ The `/api/market-share` endpoint supports the following interactive parameters:
 
 ```bash
 # Development with auto-reload
-uvicorn main:app --reload --host 0.0.0.0 --port 8000
+uvicorn main:app --reload --host 0.0.0.0 --port 8001
 
 # Production
-uvicorn main:app --host 0.0.0.0 --port 8000
+uvicorn main:app --host 0.0.0.0 --port 8001
 ```
 
 ### API Documentation
 
-Visit http://localhost:8000/docs for interactive Swagger UI documentation.
+Visit http://localhost:8001/docs for interactive Swagger UI documentation.
 
 ## Data Source
 
@@ -75,8 +75,12 @@ The API uses data from the existing v1 project located in `../bacen_project_v1/d
 
 ## CORS Configuration
 
-The API is configured to accept requests from:
-- http://localhost:3000 (Next.js default)
-- http://localhost:3001 (Next.js alternative)
+The API accepts requests from the following origins by default:
+- http://localhost:3000
+- http://localhost:3001
 
-Additional origins can be added in the CORS middleware configuration.
+You can override allowed origins by setting the `CORS_ORIGINS` environment variable (comma-separated), e.g.:
+
+```
+export CORS_ORIGINS=http://localhost:3000,http://localhost:3001
+```

@@ -1,0 +1,76 @@
+# Supabase Configuration for Banco Insights 2.0
+# Local development and production deployment settings
+
+[project]
+name = "banco-insights-2"
+id = "your-project-id-here"  # Will be filled when creating Supabase project
+org_id = "your-org-id-here"
+
+[database]
+# Database settings
+password = "your-secure-password-here"
+major_version = 15
+
+[api]
+# API settings
+enabled = true
+port = 54321
+schemas = ["public", "graphql_public"]
+extra_search_path = ["public", "extensions"]
+max_rows = 1000
+
+[auth]
+# Authentication settings
+enabled = true
+port = 54320
+site_url = "http://localhost:3000"
+additional_redirect_urls = ["https://your-domain.com"]
+jwt_expiry = 3600
+enable_signup = true
+enable_email_confirmations = false
+enable_sms_confirmations = false
+
+# Third-party auth providers
+[auth.external.github]
+enabled = false
+client_id = ""
+secret = ""
+redirect_uri = ""
+
+[auth.external.google]
+enabled = false
+client_id = ""
+secret = ""
+redirect_uri = ""
+
+[storage]
+# File storage settings
+enabled = true
+port = 54323
+file_size_limit = "50MiB"
+s3_enabled = false
+
+[edge_functions]
+# Edge functions settings
+enabled = true
+port = 54324
+
+[analytics]
+# Analytics settings
+enabled = true
+port = 54327
+vector_port = 54328
+gcp_project_id = ""
+gcp_project_number = ""
+gcp_jwt_path = "gcp.json"
+
+[functions]
+# Functions configuration
+verify_jwt = true
+
+[db]
+# Database configuration
+pooler_enabled = true
+pooler_port = 54329
+shadow_port = 54330
+logs_port = 54331
