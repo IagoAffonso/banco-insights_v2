@@ -1,0 +1,15 @@
+# OS
+.DS_Store
+
+# Python
+backend/venv/
+__pycache__/
+*.pyc
+
+# Node/Next (root-level, submodules manage their own ignores)
+node_modules/
+.next/
+
+# Env
+.env
+.env.local

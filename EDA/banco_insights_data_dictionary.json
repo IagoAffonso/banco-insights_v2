@@ -1,0 +1,2074 @@
+{
+  "metadata": {
+    "analysis_date": "2025-07-27T18:12:48.798846",
+    "total_datasets": 8,
+    "data_source": "BACEN IFDATA - Brazilian Banking Data"
+  },
+  "datasets": {
+    "consolidated_cleaned": {
+      "description": "BACEN dataset: consolidated_cleaned",
+      "shape": {
+        "rows": 10000,
+        "columns": 15
+      },
+      "quality": {
+        "total_rows": 10000,
+        "total_columns": 15,
+        "total_cells": 150000,
+        "missing_cells": 0,
+        "missing_pct": 0.0,
+        "duplicate_rows": 0,
+        "duplicate_pct": 0.0,
+        "numeric_columns": 5,
+        "text_columns": 10,
+        "datetime_columns": 0
+      },
+      "columns": {
+        "TipoInstituicao": {
+          "data_type": "int64",
+          "unique_values": 1,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "numerical",
+          "statistics": {
+            "min": 2.0,
+            "max": 2.0,
+            "mean": 2.0,
+            "std": 0.0
+          },
+          "business_meaning": "Classification/Type"
+        },
+        "CodInst": {
+          "data_type": "object",
+          "unique_values": 586,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "C0051468": "27",
+            "C0051815": "27",
+            "C0051482": "26",
+            "C0051516": "25",
+            "C0051750": "24"
+          },
+          "business_meaning": "Identifier/Code"
+        },
+        "AnoMes": {
+          "data_type": "object",
+          "unique_values": 1,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "2014-12-01": "10000"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "NomeRelatorio": {
+          "data_type": "object",
+          "unique_values": 2,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "Ativo": "9818",
+            "Carteira de crédito ativa - por indexador": "182"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "NumeroRelatorio": {
+          "data_type": "int64",
+          "unique_values": 2,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "numerical",
+          "statistics": {
+            "min": 2.0,
+            "max": 7.0,
+            "mean": 2.091,
+            "std": 0.6684038273137839
+          },
+          "business_meaning": "Report Information"
+        },
+        "Grupo": {
+          "data_type": "object",
+          "unique_values": 3,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "nagroup": "5381",
+            "Arrendamento Mercantil": "2885",
+            "Operações de Crédito": "1734"
+          },
+          "business_meaning": "To be determined"
+        },
+        "Conta": {
+          "data_type": "int64",
+          "unique_values": 29,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "numerical",
+          "statistics": {
+            "min": 23367.0,
+            "max": 78202.0,
+            "mean": 77203.9153,
+            "std": 7274.751340398641
+          },
+          "business_meaning": "To be determined"
+        },
+        "NomeColuna": {
+          "data_type": "object",
+          "unique_values": 30,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "Ativo Total Ajustado \n(i) = (a) + (b) + (c) + (d) + (e) + (f) + (g) + (h)": "579",
+            "Credores por Antecipação de Valor Residual \n(j)": "579",
+            "Ativo Total \n(k) = (i) - (j)": "578",
+            "Disponibilidades \n(a)": "578",
+            "Aplicações Interfinanceiras de Liquidez \n(b)": "578"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "DescricaoColuna": {
+          "data_type": "object",
+          "unique_values": 29,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "[49908008]": "1156",
+            "[11000006] +  [12000005] +  [13000004] + [16000001] + [17000000] + [23000001] + [49908008] + [18000009] + [19000008] + [14000003] + [15000002] + [20000004]-[23000001]": "579",
+            "[10000007]+[20000004]": "578",
+            "[11000006]": "578",
+            "[12000005]": "578"
+          },
+          "business_meaning": "To be determined"
+        },
+        "Saldo": {
+          "data_type": "float64",
+          "unique_values": 4952,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "numerical",
+          "statistics": {
+            "min": -26520346905.8,
+            "max": 1064674795911.33,
+            "mean": 577694952.952017,
+            "std": 17633068008.594753
+          },
+          "business_meaning": "Financial Amount"
+        },
+        "AnoMes_M": {
+          "data_type": "object",
+          "unique_values": 1,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "2014-12": "10000"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "AnoMes_Q": {
+          "data_type": "object",
+          "unique_values": 1,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "2014Q4": "10000"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "AnoMes_Y": {
+          "data_type": "int64",
+          "unique_values": 1,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "numerical",
+          "statistics": {
+            "min": 2014.0,
+            "max": 2014.0,
+            "mean": 2014.0,
+            "std": 0.0
+          },
+          "business_meaning": "Name/Description"
+        },
+        "NomeRelatorio_Grupo_Coluna": {
+          "data_type": "object",
+          "unique_values": 30,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "Ativo_nagroup_Ativo Total Ajustado \n(i) = (a) + (b) + (c) + (d) + (e) + (f) + (g) + (h)": "579",
+            "Ativo_nagroup_Credores por Antecipação de Valor Residual \n(j)": "579",
+            "Ativo_nagroup_Ativo Total \n(k) = (i) - (j)": "578",
+            "Ativo_nagroup_Disponibilidades \n(a)": "578",
+            "Ativo_nagroup_Aplicações Interfinanceiras de Liquidez \n(b)": "578"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "NomeInstituicao": {
+          "data_type": "object",
+          "unique_values": 586,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "RENDIMENTO": "27",
+            "CAIXA GERAL": "27",
+            "HAITONG": "26",
+            "BNP PARIBAS": "25",
+            "BANCO SICOOB": "24"
+          },
+          "business_meaning": "Name/Description"
+        }
+      },
+      "sample_data": [
+        {
+          "TipoInstituicao": 2,
+          "CodInst": "00253448",
+          "AnoMes": "2014-12-01",
+          "NomeRelatorio": "Ativo",
+          "NumeroRelatorio": 2,
+          "Grupo": "nagroup",
+          "Conta": 78202,
+          "NomeColuna": "Ativo Total Ajustado \n(i) = (a) + (b) + (c) + (d) + (e) + (f) + (g) + (h)",
+          "DescricaoColuna": "[11000006] +  [12000005] +  [13000004] + [16000001] + [17000000] + [23000001] + [49908008] + [18000009] + [19000008] + [14000003] + [15000002] + [20000004]-[23000001]",
+          "Saldo": 178797046.86,
+          "AnoMes_M": "2014-12",
+          "AnoMes_Q": "2014Q4",
+          "AnoMes_Y": 2014,
+          "NomeRelatorio_Grupo_Coluna": "Ativo_nagroup_Ativo Total Ajustado \n(i) = (a) + (b) + (c) + (d) + (e) + (f) + (g) + (h)",
+          "NomeInstituicao": "BANCO NEON S.A."
+        },
+        {
+          "TipoInstituicao": 2,
+          "CodInst": "00253448",
+          "AnoMes": "2014-12-01",
+          "NomeRelatorio": "Ativo",
+          "NumeroRelatorio": 2,
+          "Grupo": "nagroup",
+          "Conta": 78196,
+          "NomeColuna": "Credores por Antecipação de Valor Residual \n(j)",
+          "DescricaoColuna": "[49908008]",
+          "Saldo": 0.0,
+          "AnoMes_M": "2014-12",
+          "AnoMes_Q": "2014Q4",
+          "AnoMes_Y": 2014,
+          "NomeRelatorio_Grupo_Coluna": "Ativo_nagroup_Credores por Antecipação de Valor Residual \n(j)",
+          "NomeInstituicao": "BANCO NEON S.A."
+        },
+        {
+          "TipoInstituicao": 2,
+          "CodInst": "00253448",
+          "AnoMes": "2014-12-01",
+          "NomeRelatorio": "Ativo",
+          "NumeroRelatorio": 2,
+          "Grupo": "nagroup",
+          "Conta": 78182,
+          "NomeColuna": "Ativo Total \n(k) = (i) - (j)",
+          "DescricaoColuna": "[10000007]+[20000004]",
+          "Saldo": 178797046.86,
+          "AnoMes_M": "2014-12",
+          "AnoMes_Q": "2014Q4",
+          "AnoMes_Y": 2014,
+          "NomeRelatorio_Grupo_Coluna": "Ativo_nagroup_Ativo Total \n(k) = (i) - (j)",
+          "NomeInstituicao": "BANCO NEON S.A."
+        }
+      ]
+    },
+    "consolidated_reports": {
+      "description": "BACEN dataset: consolidated_reports",
+      "shape": {
+        "rows": 10000,
+        "columns": 10
+      },
+      "quality": {
+        "total_rows": 10000,
+        "total_columns": 10,
+        "total_cells": 100000,
+        "missing_cells": 6172,
+        "missing_pct": 6.172,
+        "duplicate_rows": 0,
+        "duplicate_pct": 0.0,
+        "numeric_columns": 4,
+        "text_columns": 6,
+        "datetime_columns": 0
+      },
+      "columns": {
+        "TipoInstituicao": {
+          "data_type": "int64",
+          "unique_values": 1,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "numerical",
+          "statistics": {
+            "min": 2.0,
+            "max": 2.0,
+            "mean": 2.0,
+            "std": 0.0
+          },
+          "business_meaning": "Classification/Type"
+        },
+        "CodInst": {
+          "data_type": "object",
+          "unique_values": 556,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "00253448": "33",
+            "00058338": "33",
+            "C0051891": "33",
+            "C0051884": "33",
+            "C0051877": "33"
+          },
+          "business_meaning": "Identifier/Code"
+        },
+        "AnoMes": {
+          "data_type": "int64",
+          "unique_values": 1,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "numerical",
+          "statistics": {
+            "min": 201412.0,
+            "max": 201412.0,
+            "mean": 201412.0,
+            "std": 0.0
+          },
+          "business_meaning": "Name/Description"
+        },
+        "NomeRelatorio": {
+          "data_type": "object",
+          "unique_values": 2,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "Ativo": "9303",
+            "Carteira de crédito ativa - por indexador": "697"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "NumeroRelatorio": {
+          "data_type": "int64",
+          "unique_values": 2,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "numerical",
+          "statistics": {
+            "min": 2.0,
+            "max": 7.0,
+            "mean": 2.3485,
+            "std": 1.2732673996403876
+          },
+          "business_meaning": "Report Information"
+        },
+        "Grupo": {
+          "data_type": "object",
+          "unique_values": 2,
+          "null_count": 5623,
+          "null_percentage": 56.230000000000004,
+          "category": "categorical",
+          "top_values": {
+            "Arrendamento Mercantil": "2733",
+            "Operações de Crédito": "1644"
+          },
+          "business_meaning": "To be determined"
+        },
+        "Conta": {
+          "data_type": "int64",
+          "unique_values": 32,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "numerical",
+          "statistics": {
+            "min": 23367.0,
+            "max": 78202.0,
+            "mean": 74382.815,
+            "std": 13925.791373624623
+          },
+          "business_meaning": "To be determined"
+        },
+        "NomeColuna": {
+          "data_type": "object",
+          "unique_values": 33,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "Ativo Total Ajustado \n(i) = (a) + (b) + (c) + (d) + (e) + (f) + (g) + (h)": "548",
+            "Ativo Total \n(k) = (i) - (j)": "548",
+            "Disponibilidades \n(a)": "548",
+            "Aplicações Interfinanceiras de Liquidez \n(b)": "548",
+            "TVM e Instrumentos Financeiros Derivativos \n(c)": "548"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "DescricaoColuna": {
+          "data_type": "object",
+          "unique_values": 32,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "[49908008]": "1095",
+            "[11000006] +  [12000005] +  [13000004] + [16000001] + [17000000] + [23000001] + [49908008] + [18000009] + [19000008] + [14000003] + [15000002] + [20000004]-[23000001]": "548",
+            "[10000007]+[20000004]": "548",
+            "[11000006]": "548",
+            "[12000005]": "548"
+          },
+          "business_meaning": "To be determined"
+        },
+        "Saldo": {
+          "data_type": "object",
+          "unique_values": 4692,
+          "null_count": 549,
+          "null_percentage": 5.489999999999999,
+          "category": "categorical",
+          "top_values": {
+            "0": "4196",
+            "142832652,96": "3",
+            "12393584,5": "3",
+            "80772675,37": "2",
+            "318498037,92": "2"
+          },
+          "business_meaning": "Financial Amount"
+        }
+      },
+      "sample_data": [
+        {
+          "TipoInstituicao": 2,
+          "CodInst": "00253448",
+          "AnoMes": 201412,
+          "NomeRelatorio": "Ativo",
+          "NumeroRelatorio": 2,
+          "Grupo": null,
+          "Conta": 78202,
+          "NomeColuna": "Ativo Total Ajustado \n(i) = (a) + (b) + (c) + (d) + (e) + (f) + (g) + (h)",
+          "DescricaoColuna": "[11000006] +  [12000005] +  [13000004] + [16000001] + [17000000] + [23000001] + [49908008] + [18000009] + [19000008] + [14000003] + [15000002] + [20000004]-[23000001]",
+          "Saldo": "178797046,86"
+        },
+        {
+          "TipoInstituicao": 2,
+          "CodInst": "00253448",
+          "AnoMes": 201412,
+          "NomeRelatorio": "Ativo",
+          "NumeroRelatorio": 2,
+          "Grupo": null,
+          "Conta": 78196,
+          "NomeColuna": "Credores por Antecipação de Valor Residual \n(j)",
+          "DescricaoColuna": "[49908008]",
+          "Saldo": "0"
+        },
+        {
+          "TipoInstituicao": 2,
+          "CodInst": "00253448",
+          "AnoMes": 201412,
+          "NomeRelatorio": "Ativo",
+          "NumeroRelatorio": 2,
+          "Grupo": null,
+          "Conta": 78182,
+          "NomeColuna": "Ativo Total \n(k) = (i) - (j)",
+          "DescricaoColuna": "[10000007]+[20000004]",
+          "Saldo": "178797046,86"
+        }
+      ]
+    },
+    "financial_metrics": {
+      "description": "BACEN dataset: financial_metrics",
+      "shape": {
+        "rows": 10000,
+        "columns": 15
+      },
+      "quality": {
+        "total_rows": 10000,
+        "total_columns": 15,
+        "total_cells": 150000,
+        "missing_cells": 0,
+        "missing_pct": 0.0,
+        "duplicate_rows": 0,
+        "duplicate_pct": 0.0,
+        "numeric_columns": 5,
+        "text_columns": 10,
+        "datetime_columns": 0
+      },
+      "columns": {
+        "TipoInstituicao": {
+          "data_type": "int64",
+          "unique_values": 1,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "numerical",
+          "statistics": {
+            "min": 2.0,
+            "max": 2.0,
+            "mean": 2.0,
+            "std": 0.0
+          },
+          "business_meaning": "Classification/Type"
+        },
+        "CodInst": {
+          "data_type": "object",
+          "unique_values": 341,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "C0051389": "30",
+            "02448839": "30",
+            "C0051808": "30",
+            "C0051781": "30",
+            "C0051774": "30"
+          },
+          "business_meaning": "Identifier/Code"
+        },
+        "AnoMes": {
+          "data_type": "object",
+          "unique_values": 1,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "2014-12-01": "10000"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "NomeRelatorio": {
+          "data_type": "object",
+          "unique_values": 1,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "Demonstração de Resultado": "10000"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "NumeroRelatorio": {
+          "data_type": "int64",
+          "unique_values": 1,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "numerical",
+          "statistics": {
+            "min": 4.0,
+            "max": 4.0,
+            "mean": 4.0,
+            "std": 0.0
+          },
+          "business_meaning": "Report Information"
+        },
+        "Grupo": {
+          "data_type": "object",
+          "unique_values": 5,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "Outras Receitas/Despesas Operacionais": "2995",
+            "Resultado de Intermediação Financeira - Receitas de Intermediação Financeira": "2343",
+            "nagroup": "2329",
+            "Resultado de Intermediação Financeira - Despesas de Intermediação Financeira": "2000",
+            "Resultado de Intermediação Financeira": "333"
+          },
+          "business_meaning": "To be determined"
+        },
+        "Conta": {
+          "data_type": "int64",
+          "unique_values": 30,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "numerical",
+          "statistics": {
+            "min": 78187.0,
+            "max": 78231.0,
+            "mean": 78215.9849,
+            "std": 9.834040005220261
+          },
+          "business_meaning": "To be determined"
+        },
+        "NomeColuna": {
+          "data_type": "object",
+          "unique_values": 30,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "Rendas de Operações de Arrendamento Mercantil \n(a2)": "335",
+            "Rendas de Operações com Instrumentos Financeiros Derivativos \n(a4)": "335",
+            "Resultado de Operações de Câmbio \n(a5)": "335",
+            "Rendas de Operações com TVM \n(a3)": "335",
+            "Rendas de Operações de Crédito \n(a1)": "335"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "DescricaoColuna": {
+          "data_type": "object",
+          "unique_values": 29,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "[71300007]+[81400007]": "668",
+            "[71200004]+[81940000]": "335",
+            "[71580009]+[81550005]+[71990266]+[81830268]": "335",
+            "[71100001]+[71910002]+[71915007]+[71920009]+[71925004]+[71950000]+[71980001]+[81945005]+[81950007]+[81915004]": "335",
+            "[71400000]+[71500003]-[71580009]+[71940003]+[71945008]+[71947006]+[71990053]+[71990101]+[71990156]+[71990204]+[81500000]-[81550005]+[81830055]+[81830103]+[81830158]+[81830206]": "335"
+          },
+          "business_meaning": "To be determined"
+        },
+        "Saldo": {
+          "data_type": "float64",
+          "unique_values": 6688,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "numerical",
+          "statistics": {
+            "min": -62786865487.47,
+            "max": 72696775485.59,
+            "mean": 18787253.679436,
+            "std": 2152598849.1970754
+          },
+          "business_meaning": "Financial Amount"
+        },
+        "AnoMes_M": {
+          "data_type": "object",
+          "unique_values": 1,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "2014-12": "10000"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "AnoMes_Q": {
+          "data_type": "object",
+          "unique_values": 1,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "2014Q4": "10000"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "AnoMes_Y": {
+          "data_type": "int64",
+          "unique_values": 1,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "numerical",
+          "statistics": {
+            "min": 2014.0,
+            "max": 2014.0,
+            "mean": 2014.0,
+            "std": 0.0
+          },
+          "business_meaning": "Name/Description"
+        },
+        "NomeRelatorio_Grupo_Coluna": {
+          "data_type": "object",
+          "unique_values": 30,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "Demonstração de Resultado_Resultado de Intermediação Financeira - Receitas de Intermediação Financeira_Rendas de Operações de Arrendamento Mercantil \n(a2)": "335",
+            "Demonstração de Resultado_Resultado de Intermediação Financeira - Receitas de Intermediação Financeira_Rendas de Operações com Instrumentos Financeiros Derivativos \n(a4)": "335",
+            "Demonstração de Resultado_Resultado de Intermediação Financeira - Receitas de Intermediação Financeira_Resultado de Operações de Câmbio \n(a5)": "335",
+            "Demonstração de Resultado_Resultado de Intermediação Financeira - Receitas de Intermediação Financeira_Rendas de Operações com TVM \n(a3)": "335",
+            "Demonstração de Resultado_Resultado de Intermediação Financeira - Receitas de Intermediação Financeira_Rendas de Operações de Crédito \n(a1)": "335"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "NomeInstituicao": {
+          "data_type": "object",
+          "unique_values": 341,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "BONCRED": "30",
+            "COOPERATIVA DE CRÉDITO DE RIO RUFINO - SICOOB CREDIUNIÃO": "30",
+            "BNY MELLON": "30",
+            "ORIGINAL": "30",
+            "BARIGUI": "30"
+          },
+          "business_meaning": "Name/Description"
+        }
+      },
+      "sample_data": [
+        {
+          "TipoInstituicao": 2,
+          "CodInst": "C0051389",
+          "AnoMes": "2014-12-01",
+          "NomeRelatorio": "Demonstração de Resultado",
+          "NumeroRelatorio": 4,
+          "Grupo": "Resultado de Intermediação Financeira - Receitas de Intermediação Financeira",
+          "Conta": 78204,
+          "NomeColuna": "Rendas de Operações de Arrendamento Mercantil \n(a2)",
+          "DescricaoColuna": "[71200004]+[81940000]",
+          "Saldo": 819733.58,
+          "AnoMes_M": "2014-12",
+          "AnoMes_Q": "2014Q4",
+          "AnoMes_Y": 2014,
+          "NomeRelatorio_Grupo_Coluna": "Demonstração de Resultado_Resultado de Intermediação Financeira - Receitas de Intermediação Financeira_Rendas de Operações de Arrendamento Mercantil \n(a2)",
+          "NomeInstituicao": "BONCRED"
+        },
+        {
+          "TipoInstituicao": 2,
+          "CodInst": "C0051389",
+          "AnoMes": "2014-12-01",
+          "NomeRelatorio": "Demonstração de Resultado",
+          "NumeroRelatorio": 4,
+          "Grupo": "Resultado de Intermediação Financeira - Receitas de Intermediação Financeira",
+          "Conta": 78205,
+          "NomeColuna": "Rendas de Operações com TVM \n(a3)",
+          "DescricaoColuna": "[71400000]+[71500003]-[71580009]+[71940003]+[71945008]+[71947006]+[71990053]+[71990101]+[71990156]+[71990204]+[81500000]-[81550005]+[81830055]+[81830103]+[81830158]+[81830206]",
+          "Saldo": 828141.53,
+          "AnoMes_M": "2014-12",
+          "AnoMes_Q": "2014Q4",
+          "AnoMes_Y": 2014,
+          "NomeRelatorio_Grupo_Coluna": "Demonstração de Resultado_Resultado de Intermediação Financeira - Receitas de Intermediação Financeira_Rendas de Operações com TVM \n(a3)",
+          "NomeInstituicao": "BONCRED"
+        },
+        {
+          "TipoInstituicao": 2,
+          "CodInst": "C0051389",
+          "AnoMes": "2014-12-01",
+          "NomeRelatorio": "Demonstração de Resultado",
+          "NumeroRelatorio": 4,
+          "Grupo": "Resultado de Intermediação Financeira - Receitas de Intermediação Financeira",
+          "Conta": 78206,
+          "NomeColuna": "Rendas de Operações com Instrumentos Financeiros Derivativos \n(a4)",
+          "DescricaoColuna": "[71580009]+[81550005]+[71990266]+[81830268]",
+          "Saldo": 0.0,
+          "AnoMes_M": "2014-12",
+          "AnoMes_Q": "2014Q4",
+          "AnoMes_Y": 2014,
+          "NomeRelatorio_Grupo_Coluna": "Demonstração de Resultado_Resultado de Intermediação Financeira - Receitas de Intermediação Financeira_Rendas de Operações com Instrumentos Financeiros Derivativos \n(a4)",
+          "NomeInstituicao": "BONCRED"
+        }
+      ]
+    },
+    "financial_metrics_processed": {
+      "description": "BACEN dataset: financial_metrics_processed",
+      "shape": {
+        "rows": 10000,
+        "columns": 10
+      },
+      "quality": {
+        "total_rows": 10000,
+        "total_columns": 10,
+        "total_cells": 100000,
+        "missing_cells": 0,
+        "missing_pct": 0.0,
+        "duplicate_rows": 0,
+        "duplicate_pct": 0.0,
+        "numeric_columns": 5,
+        "text_columns": 5,
+        "datetime_columns": 0
+      },
+      "columns": {
+        "NomeInstituicao": {
+          "data_type": "object",
+          "unique_values": 16,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "ABC-BRASIL": "966",
+            "AGENCIA DE FOMENTO DE GOIAS S/A": "966",
+            "AGENCIA DE FOMENTO DO ESTADO DO RIO DE JANEIRO S.A.": "966",
+            "AGENCIA DE FOMENTO DO RIO GRANDE DO NORTE S.A.": "966",
+            "AGORACRED S/A SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO": "943"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "AnoMes_Q": {
+          "data_type": "object",
+          "unique_values": 42,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "2023Q3": "299",
+            "2022Q1": "299",
+            "2024Q3": "276",
+            "2024Q2": "276",
+            "2024Q1": "276"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "AnoMes": {
+          "data_type": "object",
+          "unique_values": 42,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "2023-09-01": "299",
+            "2022-03-01": "299",
+            "2024-09-01": "276",
+            "2024-06-01": "276",
+            "2024-03-01": "276"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "ComponentType": {
+          "data_type": "object",
+          "unique_values": 4,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "revenue_buildup": "3045",
+            "pl_decomposition": "3045",
+            "intermediation_breakdown": "3040",
+            "store_receita_qtd_clientes": "870"
+          },
+          "business_meaning": "To be determined"
+        },
+        "Component": {
+          "data_type": "object",
+          "unique_values": 21,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "Receita Operacional": "1305",
+            "Rendas de Operações de Crédito \n(a1)": "435",
+            "Despesas Administrativas \n(d4)": "435",
+            "Despesas de Captação \n(b1)": "435",
+            "Receitas de Intermediação Financeira \n(a) = (a1) + (a2) + (a3) + (a4) + (a5) + (a6)": "435"
+          },
+          "business_meaning": "To be determined"
+        },
+        "ValueAbsolute": {
+          "data_type": "float64",
+          "unique_values": 6860,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "numerical",
+          "statistics": {
+            "min": -5582137325.03,
+            "max": 6240309166.2,
+            "mean": 45513524.402881,
+            "std": 390370485.43968123
+          },
+          "business_meaning": "To be determined"
+        },
+        "ValuePercentRevenue": {
+          "data_type": "float64",
+          "unique_values": 6461,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "numerical",
+          "statistics": {
+            "min": -1308.6280191546916,
+            "max": 161.45141889382222,
+            "mean": 12.635979873806022,
+            "std": 62.490860428549965
+          },
+          "business_meaning": "To be determined"
+        },
+        "ValuePerClient": {
+          "data_type": "float64",
+          "unique_values": 6460,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "numerical",
+          "statistics": {
+            "min": -3774264.5875794454,
+            "max": 4219275.9744421905,
+            "mean": 15466.780111541868,
+            "std": 179514.6401411126
+          },
+          "business_meaning": "To be determined"
+        },
+        "NumClients": {
+          "data_type": "float64",
+          "unique_values": 419,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "numerical",
+          "statistics": {
+            "min": 3.0,
+            "max": 1953959.0,
+            "mean": 90655.0689,
+            "std": 250426.67034453372
+          },
+          "business_meaning": "To be determined"
+        },
+        "ReceitaOperacional": {
+          "data_type": "float64",
+          "unique_values": 435,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "numerical",
+          "statistics": {
+            "min": 103267.61,
+            "max": 6240309166.2,
+            "mean": 296650404.879115,
+            "std": 784892029.1020103
+          },
+          "business_meaning": "To be determined"
+        }
+      },
+      "sample_data": [
+        {
+          "NomeInstituicao": "ABC-BRASIL",
+          "AnoMes_Q": "2014Q2",
+          "AnoMes": "2014-06-01",
+          "ComponentType": "revenue_buildup",
+          "Component": "Rendas de Operações de Crédito \n(a1)",
+          "ValueAbsolute": 481738897.41,
+          "ValuePercentRevenue": 50.85094967632653,
+          "ValuePerClient": 294281.5500366524,
+          "NumClients": 1637.0,
+          "ReceitaOperacional": 947354770.12
+        },
+        {
+          "NomeInstituicao": "ABC-BRASIL",
+          "AnoMes_Q": "2014Q2",
+          "AnoMes": "2014-06-01",
+          "ComponentType": "revenue_buildup",
+          "Component": "Rendas de Operações com TVM \n(a3)",
+          "ValueAbsolute": 293853213.3,
+          "ValuePercentRevenue": 31.018286134008495,
+          "ValuePerClient": 179507.15534514358,
+          "NumClients": 1637.0,
+          "ReceitaOperacional": 947354770.12
+        },
+        {
+          "NomeInstituicao": "ABC-BRASIL",
+          "AnoMes_Q": "2014Q2",
+          "AnoMes": "2014-06-01",
+          "ComponentType": "revenue_buildup",
+          "Component": "Outras Receitas Intermediação",
+          "ValueAbsolute": -91106034.33,
+          "ValuePercentRevenue": -9.61688664094231,
+          "ValuePerClient": -55654.26654245572,
+          "NumClients": 1637.0,
+          "ReceitaOperacional": 947354770.12
+        }
+      ]
+    },
+    "market_metrics": {
+      "description": "BACEN dataset: market_metrics",
+      "shape": {
+        "rows": 10000,
+        "columns": 15
+      },
+      "quality": {
+        "total_rows": 10000,
+        "total_columns": 15,
+        "total_cells": 150000,
+        "missing_cells": 0,
+        "missing_pct": 0.0,
+        "duplicate_rows": 0,
+        "duplicate_pct": 0.0,
+        "numeric_columns": 5,
+        "text_columns": 10,
+        "datetime_columns": 0
+      },
+      "columns": {
+        "TipoInstituicao": {
+          "data_type": "int64",
+          "unique_values": 1,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "numerical",
+          "statistics": {
+            "min": 2.0,
+            "max": 2.0,
+            "mean": 2.0,
+            "std": 0.0
+          },
+          "business_meaning": "Classification/Type"
+        },
+        "CodInst": {
+          "data_type": "object",
+          "unique_values": 1501,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "09526594": "8",
+            "02072790": "8",
+            "02090126": "8",
+            "02093154": "8",
+            "02104058": "8"
+          },
+          "business_meaning": "Identifier/Code"
+        },
+        "AnoMes": {
+          "data_type": "object",
+          "unique_values": 1,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "2014-12-01": "10000"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "NomeRelatorio": {
+          "data_type": "object",
+          "unique_values": 4,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "Demonstração de Resultado": "5928",
+            "Carteira de crédito ativa Pessoa Física - modalidade e prazo de vencimento": "1360",
+            "Carteira de crédito ativa Pessoa Jurídica - por porte do tomador": "1360",
+            "Carteira de crédito ativa - quantidade de clientes e de operações": "1352"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "NumeroRelatorio": {
+          "data_type": "int64",
+          "unique_values": 4,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "numerical",
+          "statistics": {
+            "min": 4.0,
+            "max": 14.0,
+            "mean": 7.1232,
+            "std": 3.9215251619696234
+          },
+          "business_meaning": "Report Information"
+        },
+        "Grupo": {
+          "data_type": "object",
+          "unique_values": 3,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "Resultado de Intermediação Financeira - Receitas de Intermediação Financeira": "4743",
+            "nagroup": "4072",
+            "Outras Receitas/Despesas Operacionais": "1185"
+          },
+          "business_meaning": "To be determined"
+        },
+        "Conta": {
+          "data_type": "int64",
+          "unique_values": 8,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "numerical",
+          "statistics": {
+            "min": 24452.0,
+            "max": 113786.0,
+            "mean": 68396.5307,
+            "std": 29341.81938116716
+          },
+          "business_meaning": "To be determined"
+        },
+        "NomeColuna": {
+          "data_type": "object",
+          "unique_values": 8,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "Total da Carteira de Pessoa Física": "1360",
+            "Total da Carteira de Pessoa Jurídica": "1360",
+            "Quantidade de clientes com operações ativas": "1352",
+            "Rendas de Operações com TVM \n(a3)": "1186",
+            "Resultado de Operações de Câmbio \n(a5)": "1186"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "DescricaoColuna": {
+          "data_type": "object",
+          "unique_values": 8,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "Volume de crédito disponibilizado a pessoas físicas por instituições financeiras, excluindo carteiras adquiridas em cessão de crédito com retenção de risco por outra instituição financeira.": "1360",
+            "Volume de crédito disponibilizado a pessoas jurídicas por instituições financeiras, excluindo carteiras adquiridas em cessão de crédito com retenção de risco por outra instituição financeira.": "1360",
+            "Quantidade de clientes com operações ativas": "1352",
+            "[71400000]+[71500003]-[71580009]+[71940003]+[71945008]+[71947006]+[71990053]+[71990101]+[71990156]+[71990204]+[81500000]-[81550005]+[81830055]+[81830103]+[81830158]+[81830206]": "1186",
+            "[71300007]+[81400007]": "1186"
+          },
+          "business_meaning": "To be determined"
+        },
+        "Saldo": {
+          "data_type": "float64",
+          "unique_values": 7659,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "numerical",
+          "statistics": {
+            "min": -10622755.79,
+            "max": 429437732106.9,
+            "mean": 420466533.246794,
+            "std": 9194068367.592428
+          },
+          "business_meaning": "Financial Amount"
+        },
+        "AnoMes_M": {
+          "data_type": "object",
+          "unique_values": 1,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "2014-12": "10000"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "AnoMes_Q": {
+          "data_type": "object",
+          "unique_values": 1,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "2014Q4": "10000"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "AnoMes_Y": {
+          "data_type": "int64",
+          "unique_values": 1,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "numerical",
+          "statistics": {
+            "min": 2014.0,
+            "max": 2014.0,
+            "mean": 2014.0,
+            "std": 0.0
+          },
+          "business_meaning": "Name/Description"
+        },
+        "NomeRelatorio_Grupo_Coluna": {
+          "data_type": "object",
+          "unique_values": 8,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "Carteira de crédito ativa Pessoa Física - modalidade e prazo de vencimento_nagroup_Total da Carteira de Pessoa Física": "1360",
+            "Carteira de crédito ativa Pessoa Jurídica - por porte do tomador_nagroup_Total da Carteira de Pessoa Jurídica": "1360",
+            "Carteira de crédito ativa - quantidade de clientes e de operações_nagroup_Quantidade de clientes com operações ativas": "1352",
+            "Demonstração de Resultado_Resultado de Intermediação Financeira - Receitas de Intermediação Financeira_Rendas de Operações com TVM \n(a3)": "1186",
+            "Demonstração de Resultado_Resultado de Intermediação Financeira - Receitas de Intermediação Financeira_Resultado de Operações de Câmbio \n(a5)": "1186"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "NomeInstituicao": {
+          "data_type": "object",
+          "unique_values": 1498,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "COOPERATIVA DE CRÉDITO RURAL COM INTERAÇÃO SOLIDÁRIA DO ALTO VALE - CRESOL ALTO VALE": "16",
+            "BANCO MASTER DE INVESTIMENTO S.A.": "8",
+            "COOPERATIVA DE CRÉDITO DOS FUNCIONÁRIOS DAS  SECRETARIAS DA AGRICULTURA, MEIO AMBIENTE E DESENVOLVIMENTO AGRÍCOLA DO ESTADO DE SÃO PAULO - COOPERCERES": "8",
+            "COOPERATIVA DE CRÉDITO MÚTUO DOS EMPREGADOS DO MAGAZINE LUIZA, EMPRESAS CONTROLADAS E COLIGADAS - COOPLUIZA": "8",
+            "COOPERATIVA DE CRÉDITO MÚTUO DOS EMPREGADOS DA PILKINGTON BRASIL": "8"
+          },
+          "business_meaning": "Name/Description"
+        }
+      },
+      "sample_data": [
+        {
+          "TipoInstituicao": 2,
+          "CodInst": "09526594",
+          "AnoMes": "2014-12-01",
+          "NomeRelatorio": "Carteira de crédito ativa - quantidade de clientes e de operações",
+          "NumeroRelatorio": 10,
+          "Grupo": "nagroup",
+          "Conta": 113786,
+          "NomeColuna": "Quantidade de clientes com operações ativas",
+          "DescricaoColuna": "Quantidade de clientes com operações ativas",
+          "Saldo": 1171.0,
+          "AnoMes_M": "2014-12",
+          "AnoMes_Q": "2014Q4",
+          "AnoMes_Y": 2014,
+          "NomeRelatorio_Grupo_Coluna": "Carteira de crédito ativa - quantidade de clientes e de operações_nagroup_Quantidade de clientes com operações ativas",
+          "NomeInstituicao": "BANCO MASTER DE INVESTIMENTO S.A."
+        },
+        {
+          "TipoInstituicao": 2,
+          "CodInst": "09527069",
+          "AnoMes": "2014-12-01",
+          "NomeRelatorio": "Carteira de crédito ativa - quantidade de clientes e de operações",
+          "NumeroRelatorio": 10,
+          "Grupo": "nagroup",
+          "Conta": 113786,
+          "NomeColuna": "Quantidade de clientes com operações ativas",
+          "DescricaoColuna": "Quantidade de clientes com operações ativas",
+          "Saldo": 413.0,
+          "AnoMes_M": "2014-12",
+          "AnoMes_Q": "2014Q4",
+          "AnoMes_Y": 2014,
+          "NomeRelatorio_Grupo_Coluna": "Carteira de crédito ativa - quantidade de clientes e de operações_nagroup_Quantidade de clientes com operações ativas",
+          "NomeInstituicao": "COOPERATIVA DE ECONOMIA E CRÉDITO MÚTUO DE RIO CLARO - SICOOB CREDIACIRC"
+        },
+        {
+          "TipoInstituicao": 2,
+          "CodInst": "09552111",
+          "AnoMes": "2014-12-01",
+          "NomeRelatorio": "Carteira de crédito ativa - quantidade de clientes e de operações",
+          "NumeroRelatorio": 10,
+          "Grupo": "nagroup",
+          "Conta": 113786,
+          "NomeColuna": "Quantidade de clientes com operações ativas",
+          "DescricaoColuna": "Quantidade de clientes com operações ativas",
+          "Saldo": 437.0,
+          "AnoMes_M": "2014-12",
+          "AnoMes_Q": "2014Q4",
+          "AnoMes_Y": 2014,
+          "NomeRelatorio_Grupo_Coluna": "Carteira de crédito ativa - quantidade de clientes e de operações_nagroup_Quantidade de clientes com operações ativas",
+          "NomeInstituicao": "COOPERATIVA DE CRÉDITO DOS MAGISTRADOS, SERVIDORES DA JUSTIÇA DO ESTADO DE GOIÁS E EMPREGADOS DA CELG LTDA."
+        }
+      ]
+    },
+    "credit_data": {
+      "description": "BACEN dataset: credit_data",
+      "shape": {
+        "rows": 10000,
+        "columns": 15
+      },
+      "quality": {
+        "total_rows": 10000,
+        "total_columns": 15,
+        "total_cells": 150000,
+        "missing_cells": 0,
+        "missing_pct": 0.0,
+        "duplicate_rows": 0,
+        "duplicate_pct": 0.0,
+        "numeric_columns": 5,
+        "text_columns": 10,
+        "datetime_columns": 0
+      },
+      "columns": {
+        "TipoInstituicao": {
+          "data_type": "int64",
+          "unique_values": 1,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "numerical",
+          "statistics": {
+            "min": 2.0,
+            "max": 2.0,
+            "mean": 2.0,
+            "std": 0.0
+          },
+          "business_meaning": "Classification/Type"
+        },
+        "CodInst": {
+          "data_type": "object",
+          "unique_values": 1650,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "C0031976": "16",
+            "C0030159": "16",
+            "C0010045": "16",
+            "C0049906": "16",
+            "C0020152": "16"
+          },
+          "business_meaning": "Identifier/Code"
+        },
+        "AnoMes": {
+          "data_type": "object",
+          "unique_values": 2,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "2014-12-01": "5918",
+            "2022-12-01": "4082"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "NomeRelatorio": {
+          "data_type": "object",
+          "unique_values": 1,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "Carteira de crédito ativa Pessoa Física - modalidade e prazo de vencimento": "10000"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "NumeroRelatorio": {
+          "data_type": "int64",
+          "unique_values": 1,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "numerical",
+          "statistics": {
+            "min": 11.0,
+            "max": 11.0,
+            "mean": 11.0,
+            "std": 0.0
+          },
+          "business_meaning": "Report Information"
+        },
+        "Grupo": {
+          "data_type": "object",
+          "unique_values": 8,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "nagroup": "2418",
+            "Empréstimo sem Consignação em Folha": "1778",
+            "Outros Créditos": "1695",
+            "Empréstimo com Consignação em Folha": "1353",
+            "Veículos": "1130"
+          },
+          "business_meaning": "To be determined"
+        },
+        "Conta": {
+          "data_type": "int64",
+          "unique_values": 8,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "numerical",
+          "statistics": {
+            "min": 23227.0,
+            "max": 24452.0,
+            "mean": 23540.205,
+            "std": 515.1764770010832
+          },
+          "business_meaning": "To be determined"
+        },
+        "NomeColuna": {
+          "data_type": "object",
+          "unique_values": 2,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "Total": "7582",
+            "Total da Carteira de Pessoa Física": "2418"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "DescricaoColuna": {
+          "data_type": "object",
+          "unique_values": 2,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "Total do grupo": "7582",
+            "Volume de crédito disponibilizado a pessoas físicas por instituições financeiras, excluindo carteiras adquiridas em cessão de crédito com retenção de risco por outra instituição financeira.": "2418"
+          },
+          "business_meaning": "To be determined"
+        },
+        "Saldo": {
+          "data_type": "float64",
+          "unique_values": 9398,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "numerical",
+          "statistics": {
+            "min": 0.0,
+            "max": 794159119867.62,
+            "mean": 916230102.9054371,
+            "std": 15657832997.253828
+          },
+          "business_meaning": "Financial Amount"
+        },
+        "AnoMes_M": {
+          "data_type": "object",
+          "unique_values": 2,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "2014-12": "5918",
+            "2022-12": "4082"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "AnoMes_Q": {
+          "data_type": "object",
+          "unique_values": 2,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "2014Q4": "5918",
+            "2022Q4": "4082"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "AnoMes_Y": {
+          "data_type": "int64",
+          "unique_values": 2,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "numerical",
+          "statistics": {
+            "min": 2014.0,
+            "max": 2022.0,
+            "mean": 2017.2656,
+            "std": 3.9322007655114124
+          },
+          "business_meaning": "Name/Description"
+        },
+        "NomeRelatorio_Grupo_Coluna": {
+          "data_type": "object",
+          "unique_values": 8,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "Carteira de crédito ativa Pessoa Física - modalidade e prazo de vencimento_nagroup_Total da Carteira de Pessoa Física": "2418",
+            "Carteira de crédito ativa Pessoa Física - modalidade e prazo de vencimento_Empréstimo sem Consignação em Folha_Total": "1778",
+            "Carteira de crédito ativa Pessoa Física - modalidade e prazo de vencimento_Outros Créditos_Total": "1695",
+            "Carteira de crédito ativa Pessoa Física - modalidade e prazo de vencimento_Empréstimo com Consignação em Folha_Total": "1353",
+            "Carteira de crédito ativa Pessoa Física - modalidade e prazo de vencimento_Veículos_Total": "1130"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "NomeInstituicao": {
+          "data_type": "object",
+          "unique_values": 1646,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "COOPERATIVA DE CRÉDITO CREDPLUS LTDA. - SICOOB CREDPLUS": "22",
+            "COOPERATIVA DE CRÉDITO UNIÃO CENTRO OESTE LTDA. - SICOOB UNIÃO CENTRO OESTE": "20",
+            "BANRISUL": "16",
+            "SAFRA": "16",
+            "CAIXA ECONÔMICA FEDERAL": "16"
+          },
+          "business_meaning": "Name/Description"
+        }
+      },
+      "sample_data": [
+        {
+          "TipoInstituicao": 2,
+          "CodInst": "C0031873",
+          "AnoMes": "2014-12-01",
+          "NomeRelatorio": "Carteira de crédito ativa Pessoa Física - modalidade e prazo de vencimento",
+          "NumeroRelatorio": 11,
+          "Grupo": "nagroup",
+          "Conta": 24452,
+          "NomeColuna": "Total da Carteira de Pessoa Física",
+          "DescricaoColuna": "Volume de crédito disponibilizado a pessoas físicas por instituições financeiras, excluindo carteiras adquiridas em cessão de crédito com retenção de risco por outra instituição financeira.",
+          "Saldo": 48796779.23,
+          "AnoMes_M": "2014-12",
+          "AnoMes_Q": "2014Q4",
+          "AnoMes_Y": 2014,
+          "NomeRelatorio_Grupo_Coluna": "Carteira de crédito ativa Pessoa Física - modalidade e prazo de vencimento_nagroup_Total da Carteira de Pessoa Física",
+          "NomeInstituicao": "SOFISA"
+        },
+        {
+          "TipoInstituicao": 2,
+          "CodInst": "C0031873",
+          "AnoMes": "2014-12-01",
+          "NomeRelatorio": "Carteira de crédito ativa Pessoa Física - modalidade e prazo de vencimento",
+          "NumeroRelatorio": 11,
+          "Grupo": "Empréstimo com Consignação em Folha",
+          "Conta": 23227,
+          "NomeColuna": "Total",
+          "DescricaoColuna": "Total do grupo",
+          "Saldo": 2143649.79,
+          "AnoMes_M": "2014-12",
+          "AnoMes_Q": "2014Q4",
+          "AnoMes_Y": 2014,
+          "NomeRelatorio_Grupo_Coluna": "Carteira de crédito ativa Pessoa Física - modalidade e prazo de vencimento_Empréstimo com Consignação em Folha_Total",
+          "NomeInstituicao": "SOFISA"
+        },
+        {
+          "TipoInstituicao": 2,
+          "CodInst": "C0031873",
+          "AnoMes": "2014-12-01",
+          "NomeRelatorio": "Carteira de crédito ativa Pessoa Física - modalidade e prazo de vencimento",
+          "NumeroRelatorio": 11,
+          "Grupo": "Empréstimo sem Consignação em Folha",
+          "Conta": 23235,
+          "NomeColuna": "Total",
+          "DescricaoColuna": "Total do grupo",
+          "Saldo": 24514270.21,
+          "AnoMes_M": "2014-12",
+          "AnoMes_Q": "2014Q4",
+          "AnoMes_Y": 2014,
+          "NomeRelatorio_Grupo_Coluna": "Carteira de crédito ativa Pessoa Física - modalidade e prazo de vencimento_Empréstimo sem Consignação em Folha_Total",
+          "NomeInstituicao": "SOFISA"
+        }
+      ]
+    },
+    "cred_pf": {
+      "description": "BACEN dataset: cred_pf",
+      "shape": {
+        "rows": 10000,
+        "columns": 15
+      },
+      "quality": {
+        "total_rows": 10000,
+        "total_columns": 15,
+        "total_cells": 150000,
+        "missing_cells": 0,
+        "missing_pct": 0.0,
+        "duplicate_rows": 0,
+        "duplicate_pct": 0.0,
+        "numeric_columns": 5,
+        "text_columns": 10,
+        "datetime_columns": 0
+      },
+      "columns": {
+        "TipoInstituicao": {
+          "data_type": "int64",
+          "unique_values": 1,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "numerical",
+          "statistics": {
+            "min": 2.0,
+            "max": 2.0,
+            "mean": 2.0,
+            "std": 0.0
+          },
+          "business_meaning": "Classification/Type"
+        },
+        "CodInst": {
+          "data_type": "object",
+          "unique_values": 1650,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "C0031976": "16",
+            "C0030159": "16",
+            "C0010045": "16",
+            "C0049906": "16",
+            "C0020152": "16"
+          },
+          "business_meaning": "Identifier/Code"
+        },
+        "AnoMes": {
+          "data_type": "object",
+          "unique_values": 2,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "2014-12-01": "5918",
+            "2022-12-01": "4082"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "NomeRelatorio": {
+          "data_type": "object",
+          "unique_values": 1,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "Carteira de crédito ativa Pessoa Física - modalidade e prazo de vencimento": "10000"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "NumeroRelatorio": {
+          "data_type": "int64",
+          "unique_values": 1,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "numerical",
+          "statistics": {
+            "min": 11.0,
+            "max": 11.0,
+            "mean": 11.0,
+            "std": 0.0
+          },
+          "business_meaning": "Report Information"
+        },
+        "Grupo": {
+          "data_type": "object",
+          "unique_values": 8,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "nagroup": "2418",
+            "Empréstimo sem Consignação em Folha": "1778",
+            "Outros Créditos": "1695",
+            "Empréstimo com Consignação em Folha": "1353",
+            "Veículos": "1130"
+          },
+          "business_meaning": "To be determined"
+        },
+        "Conta": {
+          "data_type": "int64",
+          "unique_values": 8,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "numerical",
+          "statistics": {
+            "min": 23227.0,
+            "max": 24452.0,
+            "mean": 23540.205,
+            "std": 515.1764770010832
+          },
+          "business_meaning": "To be determined"
+        },
+        "NomeColuna": {
+          "data_type": "object",
+          "unique_values": 2,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "Total": "7582",
+            "Total da Carteira de Pessoa Física": "2418"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "DescricaoColuna": {
+          "data_type": "object",
+          "unique_values": 2,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "Total do grupo": "7582",
+            "Volume de crédito disponibilizado a pessoas físicas por instituições financeiras, excluindo carteiras adquiridas em cessão de crédito com retenção de risco por outra instituição financeira.": "2418"
+          },
+          "business_meaning": "To be determined"
+        },
+        "Saldo": {
+          "data_type": "float64",
+          "unique_values": 9398,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "numerical",
+          "statistics": {
+            "min": 0.0,
+            "max": 794159119867.62,
+            "mean": 916230102.9054371,
+            "std": 15657832997.253828
+          },
+          "business_meaning": "Financial Amount"
+        },
+        "AnoMes_M": {
+          "data_type": "object",
+          "unique_values": 2,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "2014-12": "5918",
+            "2022-12": "4082"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "AnoMes_Q": {
+          "data_type": "object",
+          "unique_values": 2,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "2014Q4": "5918",
+            "2022Q4": "4082"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "AnoMes_Y": {
+          "data_type": "int64",
+          "unique_values": 2,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "numerical",
+          "statistics": {
+            "min": 2014.0,
+            "max": 2022.0,
+            "mean": 2017.2656,
+            "std": 3.9322007655114124
+          },
+          "business_meaning": "Name/Description"
+        },
+        "NomeRelatorio_Grupo_Coluna": {
+          "data_type": "object",
+          "unique_values": 8,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "Carteira de crédito ativa Pessoa Física - modalidade e prazo de vencimento_nagroup_Total da Carteira de Pessoa Física": "2418",
+            "Carteira de crédito ativa Pessoa Física - modalidade e prazo de vencimento_Empréstimo sem Consignação em Folha_Total": "1778",
+            "Carteira de crédito ativa Pessoa Física - modalidade e prazo de vencimento_Outros Créditos_Total": "1695",
+            "Carteira de crédito ativa Pessoa Física - modalidade e prazo de vencimento_Empréstimo com Consignação em Folha_Total": "1353",
+            "Carteira de crédito ativa Pessoa Física - modalidade e prazo de vencimento_Veículos_Total": "1130"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "NomeInstituicao": {
+          "data_type": "object",
+          "unique_values": 1646,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "COOPERATIVA DE CRÉDITO CREDPLUS LTDA. - SICOOB CREDPLUS": "22",
+            "COOPERATIVA DE CRÉDITO UNIÃO CENTRO OESTE LTDA. - SICOOB UNIÃO CENTRO OESTE": "20",
+            "BANRISUL": "16",
+            "SAFRA": "16",
+            "CAIXA ECONÔMICA FEDERAL": "16"
+          },
+          "business_meaning": "Name/Description"
+        }
+      },
+      "sample_data": [
+        {
+          "TipoInstituicao": 2,
+          "CodInst": "C0031873",
+          "AnoMes": "2014-12-01",
+          "NomeRelatorio": "Carteira de crédito ativa Pessoa Física - modalidade e prazo de vencimento",
+          "NumeroRelatorio": 11,
+          "Grupo": "nagroup",
+          "Conta": 24452,
+          "NomeColuna": "Total da Carteira de Pessoa Física",
+          "DescricaoColuna": "Volume de crédito disponibilizado a pessoas físicas por instituições financeiras, excluindo carteiras adquiridas em cessão de crédito com retenção de risco por outra instituição financeira.",
+          "Saldo": 48796779.23,
+          "AnoMes_M": "2014-12",
+          "AnoMes_Q": "2014Q4",
+          "AnoMes_Y": 2014,
+          "NomeRelatorio_Grupo_Coluna": "Carteira de crédito ativa Pessoa Física - modalidade e prazo de vencimento_nagroup_Total da Carteira de Pessoa Física",
+          "NomeInstituicao": "SOFISA"
+        },
+        {
+          "TipoInstituicao": 2,
+          "CodInst": "C0031873",
+          "AnoMes": "2014-12-01",
+          "NomeRelatorio": "Carteira de crédito ativa Pessoa Física - modalidade e prazo de vencimento",
+          "NumeroRelatorio": 11,
+          "Grupo": "Empréstimo com Consignação em Folha",
+          "Conta": 23227,
+          "NomeColuna": "Total",
+          "DescricaoColuna": "Total do grupo",
+          "Saldo": 2143649.79,
+          "AnoMes_M": "2014-12",
+          "AnoMes_Q": "2014Q4",
+          "AnoMes_Y": 2014,
+          "NomeRelatorio_Grupo_Coluna": "Carteira de crédito ativa Pessoa Física - modalidade e prazo de vencimento_Empréstimo com Consignação em Folha_Total",
+          "NomeInstituicao": "SOFISA"
+        },
+        {
+          "TipoInstituicao": 2,
+          "CodInst": "C0031873",
+          "AnoMes": "2014-12-01",
+          "NomeRelatorio": "Carteira de crédito ativa Pessoa Física - modalidade e prazo de vencimento",
+          "NumeroRelatorio": 11,
+          "Grupo": "Empréstimo sem Consignação em Folha",
+          "Conta": 23235,
+          "NomeColuna": "Total",
+          "DescricaoColuna": "Total do grupo",
+          "Saldo": 24514270.21,
+          "AnoMes_M": "2014-12",
+          "AnoMes_Q": "2014Q4",
+          "AnoMes_Y": 2014,
+          "NomeRelatorio_Grupo_Coluna": "Carteira de crédito ativa Pessoa Física - modalidade e prazo de vencimento_Empréstimo sem Consignação em Folha_Total",
+          "NomeInstituicao": "SOFISA"
+        }
+      ]
+    },
+    "cred_pj": {
+      "description": "BACEN dataset: cred_pj",
+      "shape": {
+        "rows": 10000,
+        "columns": 15
+      },
+      "quality": {
+        "total_rows": 10000,
+        "total_columns": 15,
+        "total_cells": 150000,
+        "missing_cells": 0,
+        "missing_pct": 0.0,
+        "duplicate_rows": 0,
+        "duplicate_pct": 0.0,
+        "numeric_columns": 5,
+        "text_columns": 10,
+        "datetime_columns": 0
+      },
+      "columns": {
+        "TipoInstituicao": {
+          "data_type": "int64",
+          "unique_values": 1,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "numerical",
+          "statistics": {
+            "min": 2.0,
+            "max": 2.0,
+            "mean": 2.0,
+            "std": 0.0
+          },
+          "business_meaning": "Classification/Type"
+        },
+        "CodInst": {
+          "data_type": "object",
+          "unique_values": 1360,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "C0030173": "15",
+            "C0010069": "15",
+            "C0010045": "15",
+            "C0051152": "15",
+            "C0031976": "15"
+          },
+          "business_meaning": "Identifier/Code"
+        },
+        "AnoMes": {
+          "data_type": "object",
+          "unique_values": 1,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "2014-12-01": "10000"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "NomeRelatorio": {
+          "data_type": "object",
+          "unique_values": 2,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "Carteira de crédito ativa Pessoa Jurídica - modalidade e prazo de vencimento": "5846",
+            "Carteira de crédito ativa Pessoa Jurídica - por porte do tomador": "4154"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "NumeroRelatorio": {
+          "data_type": "int64",
+          "unique_values": 2,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "numerical",
+          "statistics": {
+            "min": 13.0,
+            "max": 14.0,
+            "mean": 13.4154,
+            "std": 0.4928155098134208
+          },
+          "business_meaning": "Report Information"
+        },
+        "Grupo": {
+          "data_type": "object",
+          "unique_values": 10,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "nagroup": "5514",
+            "Capital de Giro": "878",
+            "Outros Créditos": "835",
+            "Capital de Giro Rotativo": "775",
+            "Operações com Recebíveis": "745"
+          },
+          "business_meaning": "To be determined"
+        },
+        "Conta": {
+          "data_type": "int64",
+          "unique_values": 14,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "numerical",
+          "statistics": {
+            "min": 23283.0,
+            "max": 24453.0,
+            "mean": 23625.2806,
+            "std": 495.0175601957191
+          },
+          "business_meaning": "To be determined"
+        },
+        "NomeColuna": {
+          "data_type": "object",
+          "unique_values": 6,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "Total": "4486",
+            "Total da Carteira de Pessoa Jurídica": "2628",
+            "Micro": "856",
+            "Pequena": "840",
+            "Média": "684"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "DescricaoColuna": {
+          "data_type": "object",
+          "unique_values": 6,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "Total do grupo": "4486",
+            "Volume de crédito disponibilizado a pessoas jurídicas por instituições financeiras, excluindo carteiras adquiridas em cessão de crédito com retenção de risco por outra instituição financeira.": "2628",
+            "Micro": "856",
+            "Pequena": "840",
+            "Média": "684"
+          },
+          "business_meaning": "To be determined"
+        },
+        "Saldo": {
+          "data_type": "float64",
+          "unique_values": 8152,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "numerical",
+          "statistics": {
+            "min": 0.0,
+            "max": 383327345906.37,
+            "mean": 717820436.311857,
+            "std": 11295564934.173094
+          },
+          "business_meaning": "Financial Amount"
+        },
+        "AnoMes_M": {
+          "data_type": "object",
+          "unique_values": 1,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "2014-12": "10000"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "AnoMes_Q": {
+          "data_type": "object",
+          "unique_values": 1,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "2014Q4": "10000"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "AnoMes_Y": {
+          "data_type": "int64",
+          "unique_values": 1,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "numerical",
+          "statistics": {
+            "min": 2014.0,
+            "max": 2014.0,
+            "mean": 2014.0,
+            "std": 0.0
+          },
+          "business_meaning": "Name/Description"
+        },
+        "NomeRelatorio_Grupo_Coluna": {
+          "data_type": "object",
+          "unique_values": 15,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "Carteira de crédito ativa Pessoa Jurídica - modalidade e prazo de vencimento_nagroup_Total da Carteira de Pessoa Jurídica": "1360",
+            "Carteira de crédito ativa Pessoa Jurídica - por porte do tomador_nagroup_Total da Carteira de Pessoa Jurídica": "1268",
+            "Carteira de crédito ativa Pessoa Jurídica - modalidade e prazo de vencimento_Capital de Giro_Total": "878",
+            "Carteira de crédito ativa Pessoa Jurídica - por porte do tomador_nagroup_Micro": "856",
+            "Carteira de crédito ativa Pessoa Jurídica - por porte do tomador_nagroup_Pequena": "840"
+          },
+          "business_meaning": "Name/Description"
+        },
+        "NomeInstituicao": {
+          "data_type": "object",
+          "unique_values": 1357,
+          "null_count": 0,
+          "null_percentage": 0.0,
+          "category": "categorical",
+          "top_values": {
+            "COOPERATIVA DE CRÉDITO UNIÃO CENTRO OESTE LTDA. - SICOOB UNIÃO CENTRO OESTE": "25",
+            "COOPERATIVA DE CRÉDITO CREDPLUS LTDA. - SICOOB CREDPLUS": "22",
+            "COOPERATIVA DE CRÉDITO RURAL COM INTERAÇÃO SOLIDÁRIA DO ALTO VALE - CRESOL ALTO VALE": "17",
+            "BB": "15",
+            "SAFRA": "15"
+          },
+          "business_meaning": "Name/Description"
+        }
+      },
+      "sample_data": [
+        {
+          "TipoInstituicao": 2,
+          "CodInst": "C0049944",
+          "AnoMes": "2014-12-01",
+          "NomeRelatorio": "Carteira de crédito ativa Pessoa Jurídica - modalidade e prazo de vencimento",
+          "NumeroRelatorio": 13,
+          "Grupo": "Operações com Recebíveis",
+          "Conta": 23307,
+          "NomeColuna": "Total",
+          "DescricaoColuna": "Total do grupo",
+          "Saldo": 994431597.65,
+          "AnoMes_M": "2014-12",
+          "AnoMes_Q": "2014Q4",
+          "AnoMes_Y": 2014,
+          "NomeRelatorio_Grupo_Coluna": "Carteira de crédito ativa Pessoa Jurídica - modalidade e prazo de vencimento_Operações com Recebíveis_Total",
+          "NomeInstituicao": "BTG PACTUAL"
+        },
+        {
+          "TipoInstituicao": 2,
+          "CodInst": "C0049944",
+          "AnoMes": "2014-12-01",
+          "NomeRelatorio": "Carteira de crédito ativa Pessoa Jurídica - modalidade e prazo de vencimento",
+          "NumeroRelatorio": 13,
+          "Grupo": "Comércio Exterior",
+          "Conta": 23339,
+          "NomeColuna": "Total",
+          "DescricaoColuna": "Total do grupo",
+          "Saldo": 744190258.2,
+          "AnoMes_M": "2014-12",
+          "AnoMes_Q": "2014Q4",
+          "AnoMes_Y": 2014,
+          "NomeRelatorio_Grupo_Coluna": "Carteira de crédito ativa Pessoa Jurídica - modalidade e prazo de vencimento_Comércio Exterior_Total",
+          "NomeInstituicao": "BTG PACTUAL"
+        },
+        {
+          "TipoInstituicao": 2,
+          "CodInst": "C0049944",
+          "AnoMes": "2014-12-01",
+          "NomeRelatorio": "Carteira de crédito ativa Pessoa Jurídica - modalidade e prazo de vencimento",
+          "NumeroRelatorio": 13,
+          "Grupo": "Outros Créditos",
+          "Conta": 23347,
+          "NomeColuna": "Total",
+          "DescricaoColuna": "Total do grupo",
+          "Saldo": 110058272.21,
+          "AnoMes_M": "2014-12",
+          "AnoMes_Q": "2014Q4",
+          "AnoMes_Y": 2014,
+          "NomeRelatorio_Grupo_Coluna": "Carteira de crédito ativa Pessoa Jurídica - modalidade e prazo de vencimento_Outros Créditos_Total",
+          "NomeInstituicao": "BTG PACTUAL"
+        }
+      ]
+    }
+  }
+}

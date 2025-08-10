@@ -1,0 +1,111 @@
+dataset,column,data_type,category,business_meaning,unique_values,null_percentage
+consolidated_cleaned,TipoInstituicao,int64,numerical,Classification/Type,1,0.0
+consolidated_cleaned,CodInst,object,categorical,Identifier/Code,586,0.0
+consolidated_cleaned,AnoMes,object,categorical,Name/Description,1,0.0
+consolidated_cleaned,NomeRelatorio,object,categorical,Name/Description,2,0.0
+consolidated_cleaned,NumeroRelatorio,int64,numerical,Report Information,2,0.0
+consolidated_cleaned,Grupo,object,categorical,To be determined,3,0.0
+consolidated_cleaned,Conta,int64,numerical,To be determined,29,0.0
+consolidated_cleaned,NomeColuna,object,categorical,Name/Description,30,0.0
+consolidated_cleaned,DescricaoColuna,object,categorical,To be determined,29,0.0
+consolidated_cleaned,Saldo,float64,numerical,Financial Amount,4952,0.0
+consolidated_cleaned,AnoMes_M,object,categorical,Name/Description,1,0.0
+consolidated_cleaned,AnoMes_Q,object,categorical,Name/Description,1,0.0
+consolidated_cleaned,AnoMes_Y,int64,numerical,Name/Description,1,0.0
+consolidated_cleaned,NomeRelatorio_Grupo_Coluna,object,categorical,Name/Description,30,0.0
+consolidated_cleaned,NomeInstituicao,object,categorical,Name/Description,586,0.0
+consolidated_reports,TipoInstituicao,int64,numerical,Classification/Type,1,0.0
+consolidated_reports,CodInst,object,categorical,Identifier/Code,556,0.0
+consolidated_reports,AnoMes,int64,numerical,Name/Description,1,0.0
+consolidated_reports,NomeRelatorio,object,categorical,Name/Description,2,0.0
+consolidated_reports,NumeroRelatorio,int64,numerical,Report Information,2,0.0
+consolidated_reports,Grupo,object,categorical,To be determined,2,56.23
+consolidated_reports,Conta,int64,numerical,To be determined,32,0.0
+consolidated_reports,NomeColuna,object,categorical,Name/Description,33,0.0
+consolidated_reports,DescricaoColuna,object,categorical,To be determined,32,0.0
+consolidated_reports,Saldo,object,categorical,Financial Amount,4692,5.49
+financial_metrics,TipoInstituicao,int64,numerical,Classification/Type,1,0.0
+financial_metrics,CodInst,object,categorical,Identifier/Code,341,0.0
+financial_metrics,AnoMes,object,categorical,Name/Description,1,0.0
+financial_metrics,NomeRelatorio,object,categorical,Name/Description,1,0.0
+financial_metrics,NumeroRelatorio,int64,numerical,Report Information,1,0.0
+financial_metrics,Grupo,object,categorical,To be determined,5,0.0
+financial_metrics,Conta,int64,numerical,To be determined,30,0.0
+financial_metrics,NomeColuna,object,categorical,Name/Description,30,0.0
+financial_metrics,DescricaoColuna,object,categorical,To be determined,29,0.0
+financial_metrics,Saldo,float64,numerical,Financial Amount,6688,0.0
+financial_metrics,AnoMes_M,object,categorical,Name/Description,1,0.0
+financial_metrics,AnoMes_Q,object,categorical,Name/Description,1,0.0
+financial_metrics,AnoMes_Y,int64,numerical,Name/Description,1,0.0
+financial_metrics,NomeRelatorio_Grupo_Coluna,object,categorical,Name/Description,30,0.0
+financial_metrics,NomeInstituicao,object,categorical,Name/Description,341,0.0
+financial_metrics_processed,NomeInstituicao,object,categorical,Name/Description,16,0.0
+financial_metrics_processed,AnoMes_Q,object,categorical,Name/Description,42,0.0
+financial_metrics_processed,AnoMes,object,categorical,Name/Description,42,0.0
+financial_metrics_processed,ComponentType,object,categorical,To be determined,4,0.0
+financial_metrics_processed,Component,object,categorical,To be determined,21,0.0
+financial_metrics_processed,ValueAbsolute,float64,numerical,To be determined,6860,0.0
+financial_metrics_processed,ValuePercentRevenue,float64,numerical,To be determined,6461,0.0
+financial_metrics_processed,ValuePerClient,float64,numerical,To be determined,6460,0.0
+financial_metrics_processed,NumClients,float64,numerical,To be determined,419,0.0
+financial_metrics_processed,ReceitaOperacional,float64,numerical,To be determined,435,0.0
+market_metrics,TipoInstituicao,int64,numerical,Classification/Type,1,0.0
+market_metrics,CodInst,object,categorical,Identifier/Code,1501,0.0
+market_metrics,AnoMes,object,categorical,Name/Description,1,0.0
+market_metrics,NomeRelatorio,object,categorical,Name/Description,4,0.0
+market_metrics,NumeroRelatorio,int64,numerical,Report Information,4,0.0
+market_metrics,Grupo,object,categorical,To be determined,3,0.0
+market_metrics,Conta,int64,numerical,To be determined,8,0.0
+market_metrics,NomeColuna,object,categorical,Name/Description,8,0.0
+market_metrics,DescricaoColuna,object,categorical,To be determined,8,0.0
+market_metrics,Saldo,float64,numerical,Financial Amount,7659,0.0
+market_metrics,AnoMes_M,object,categorical,Name/Description,1,0.0
+market_metrics,AnoMes_Q,object,categorical,Name/Description,1,0.0
+market_metrics,AnoMes_Y,int64,numerical,Name/Description,1,0.0
+market_metrics,NomeRelatorio_Grupo_Coluna,object,categorical,Name/Description,8,0.0
+market_metrics,NomeInstituicao,object,categorical,Name/Description,1498,0.0
+credit_data,TipoInstituicao,int64,numerical,Classification/Type,1,0.0
+credit_data,CodInst,object,categorical,Identifier/Code,1650,0.0
+credit_data,AnoMes,object,categorical,Name/Description,2,0.0
+credit_data,NomeRelatorio,object,categorical,Name/Description,1,0.0
+credit_data,NumeroRelatorio,int64,numerical,Report Information,1,0.0
+credit_data,Grupo,object,categorical,To be determined,8,0.0
+credit_data,Conta,int64,numerical,To be determined,8,0.0
+credit_data,NomeColuna,object,categorical,Name/Description,2,0.0
+credit_data,DescricaoColuna,object,categorical,To be determined,2,0.0
+credit_data,Saldo,float64,numerical,Financial Amount,9398,0.0
+credit_data,AnoMes_M,object,categorical,Name/Description,2,0.0
+credit_data,AnoMes_Q,object,categorical,Name/Description,2,0.0
+credit_data,AnoMes_Y,int64,numerical,Name/Description,2,0.0
+credit_data,NomeRelatorio_Grupo_Coluna,object,categorical,Name/Description,8,0.0
+credit_data,NomeInstituicao,object,categorical,Name/Description,1646,0.0
+cred_pf,TipoInstituicao,int64,numerical,Classification/Type,1,0.0
+cred_pf,CodInst,object,categorical,Identifier/Code,1650,0.0
+cred_pf,AnoMes,object,categorical,Name/Description,2,0.0
+cred_pf,NomeRelatorio,object,categorical,Name/Description,1,0.0
+cred_pf,NumeroRelatorio,int64,numerical,Report Information,1,0.0
+cred_pf,Grupo,object,categorical,To be determined,8,0.0
+cred_pf,Conta,int64,numerical,To be determined,8,0.0
+cred_pf,NomeColuna,object,categorical,Name/Description,2,0.0
+cred_pf,DescricaoColuna,object,categorical,To be determined,2,0.0
+cred_pf,Saldo,float64,numerical,Financial Amount,9398,0.0
+cred_pf,AnoMes_M,object,categorical,Name/Description,2,0.0
+cred_pf,AnoMes_Q,object,categorical,Name/Description,2,0.0
+cred_pf,AnoMes_Y,int64,numerical,Name/Description,2,0.0
+cred_pf,NomeRelatorio_Grupo_Coluna,object,categorical,Name/Description,8,0.0
+cred_pf,NomeInstituicao,object,categorical,Name/Description,1646,0.0
+cred_pj,TipoInstituicao,int64,numerical,Classification/Type,1,0.0
+cred_pj,CodInst,object,categorical,Identifier/Code,1360,0.0
+cred_pj,AnoMes,object,categorical,Name/Description,1,0.0
+cred_pj,NomeRelatorio,object,categorical,Name/Description,2,0.0
+cred_pj,NumeroRelatorio,int64,numerical,Report Information,2,0.0
+cred_pj,Grupo,object,categorical,To be determined,10,0.0
+cred_pj,Conta,int64,numerical,To be determined,14,0.0
+cred_pj,NomeColuna,object,categorical,Name/Description,6,0.0
+cred_pj,DescricaoColuna,object,categorical,To be determined,6,0.0
+cred_pj,Saldo,float64,numerical,Financial Amount,8152,0.0
+cred_pj,AnoMes_M,object,categorical,Name/Description,1,0.0
+cred_pj,AnoMes_Q,object,categorical,Name/Description,1,0.0
+cred_pj,AnoMes_Y,int64,numerical,Name/Description,1,0.0
+cred_pj,NomeRelatorio_Grupo_Coluna,object,categorical,Name/Description,15,0.0
+cred_pj,NomeInstituicao,object,categorical,Name/Description,1357,0.0
