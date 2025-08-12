@@ -1,0 +1,47 @@
+Banco Insights 2.0 - Database Test Results
+==================================================
+
+[16:12:41] 🚀 Starting Banco Insights 2.0 Database Tests
+[16:12:41] ============================================================
+[16:12:41] ✅ Database connection successful
+[16:12:41] 
+🔍 Testing Database Schema...
+[16:12:41]   ❌ Table 'institutions' missing
+[16:12:41]   ❌ Table 'report_types' missing
+[16:12:41]   ❌ Table 'metric_groups' missing
+[16:12:41]   ❌ Table 'metrics' missing
+[16:12:41]   ❌ Table 'time_periods' missing
+[16:12:41]   ❌ Table 'geographic_regions' missing
+[16:12:41]   ❌ Table 'financial_data' missing
+[16:12:41] 
+📊 Testing Database Indexes...
+[16:12:41]   ❌ Index 'idx_financial_data_institution_time' missing
+[16:12:41]   ❌ Index 'idx_financial_data_report_metric' missing
+[16:12:41]   ❌ Index 'idx_institutions_segment' missing
+[16:12:41]   ❌ Index 'idx_time_periods_year_quarter' missing
+[16:12:41] 
+📈 Testing Materialized Views...
+[16:12:41]   ❌ Materialized view 'market_share_view' missing
+[16:12:41]   ❌ Materialized view 'institution_summary_view' missing
+[16:12:41]   ❌ Materialized view 'credit_portfolio_view' missing
+[16:12:41] 
+💾 Testing Sample Data Operations...
+[16:12:41]   ❌ Sample data operations failed: function load_sample_data() does not exist
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+[16:12:41] 
+⚙️ Testing ETL Procedures...
+[16:12:41]   ❌ ETL procedures test failed: function get_etl_status() does not exist
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+[16:12:41] 
+🚀 Testing Performance Queries...
+[16:12:41]   ❌ Market Share Query failed: relation "market_share_view" does not exist
+[16:12:41]   ❌ Institution Summary failed: relation "institution_summary_view" does not exist
+[16:12:41]   ❌ Time Series Data failed: relation "financial_data" does not exist
+[16:12:41] 
+📋 Generating Test Report...
+[16:12:41]   ❌ Error generating report: column "tablename" does not exist
+[16:12:41] 
+============================================================
+[16:12:41] ✅ All database tests completed!
+[16:12:41] 🎯 Database is ready for Supabase deployment
+[16:12:41] 📝 Database connection closed

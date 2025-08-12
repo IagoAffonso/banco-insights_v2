@@ -1,0 +1,179 @@
+{
+  "test_timestamp": "2025-08-10T16:41:43.663222",
+  "total_tests": 21,
+  "summary": {
+    "passed": 13,
+    "warnings": 5,
+    "failed": 3
+  },
+  "test_details": [
+    {
+      "test_name": "Schema - Required Tables",
+      "status": "PASS",
+      "execution_time": 0.007806062698364258,
+      "row_count": 7,
+      "details": "Query executed successfully in 0.008s",
+      "error": null
+    },
+    {
+      "test_name": "Schema - Materialized Views",
+      "status": "PASS",
+      "execution_time": 0.0009162425994873047,
+      "row_count": 3,
+      "details": "Query executed successfully in 0.001s",
+      "error": null
+    },
+    {
+      "test_name": "Schema - Performance Indexes",
+      "status": "PASS",
+      "execution_time": 0.0015492439270019531,
+      "row_count": 28,
+      "details": "Query executed successfully in 0.002s",
+      "error": null
+    },
+    {
+      "test_name": "Dimensions - Institutions Count",
+      "status": "PASS",
+      "execution_time": 0.0014073848724365234,
+      "row_count": 1,
+      "details": "Query executed successfully in 0.001s",
+      "error": null
+    },
+    {
+      "test_name": "Dimensions - Time Periods Coverage",
+      "status": "WARNING",
+      "execution_time": 0.0006840229034423828,
+      "row_count": 1,
+      "details": "Query executed successfully in 0.001s (Expected \u226516 rows, got 1)",
+      "error": null
+    },
+    {
+      "test_name": "Dimensions - Report Types",
+      "status": "WARNING",
+      "execution_time": 0.000492095947265625,
+      "row_count": 1,
+      "details": "Query executed successfully in 0.000s (Expected \u22655 rows, got 1)",
+      "error": null
+    },
+    {
+      "test_name": "Dimensions - Metrics Count",
+      "status": "WARNING",
+      "execution_time": 0.0005369186401367188,
+      "row_count": 1,
+      "details": "Query executed successfully in 0.001s (Expected \u226550 rows, got 1)",
+      "error": null
+    },
+    {
+      "test_name": "Dimensions - Metric Groups",
+      "status": "WARNING",
+      "execution_time": 0.0004949569702148438,
+      "row_count": 1,
+      "details": "Query executed successfully in 0.000s (Expected \u226510 rows, got 1)",
+      "error": null
+    },
+    {
+      "test_name": "Fact - Total Records",
+      "status": "WARNING",
+      "execution_time": 0.0010750293731689453,
+      "row_count": 1,
+      "details": "Query executed successfully in 0.001s (Expected \u22651000 rows, got 1)",
+      "error": null
+    },
+    {
+      "test_name": "Fact - Data Quality (No Nulls)",
+      "status": "PASS",
+      "execution_time": 0.0003941059112548828,
+      "row_count": 1,
+      "details": "Query executed successfully in 0.000s",
+      "error": null
+    },
+    {
+      "test_name": "Fact - Value Range Validation",
+      "status": "PASS",
+      "execution_time": 0.0009429454803466797,
+      "row_count": 1,
+      "details": "Query executed successfully in 0.001s",
+      "error": null
+    },
+    {
+      "test_name": "Fact - Foreign Key Integrity",
+      "status": "PASS",
+      "execution_time": 0.002012968063354492,
+      "row_count": 1,
+      "details": "Query executed successfully in 0.002s",
+      "error": null
+    },
+    {
+      "test_name": "MaterializedView - Market Share View",
+      "status": "PASS",
+      "execution_time": 0.0007979869842529297,
+      "row_count": 1,
+      "details": "Query executed successfully in 0.001s",
+      "error": null
+    },
+    {
+      "test_name": "MaterializedView - Institution Summary View",
+      "status": "PASS",
+      "execution_time": 0.0007827281951904297,
+      "row_count": 1,
+      "details": "Query executed successfully in 0.001s",
+      "error": null
+    },
+    {
+      "test_name": "MaterializedView - Credit Portfolio View",
+      "status": "PASS",
+      "execution_time": 0.0008299350738525391,
+      "row_count": 1,
+      "details": "Query executed successfully in 0.001s",
+      "error": null
+    },
+    {
+      "test_name": "Performance - Market Share Query",
+      "status": "PASS",
+      "execution_time": 0.0039217472076416016,
+      "row_count": 20,
+      "details": "Query executed successfully in 0.004s",
+      "error": null
+    },
+    {
+      "test_name": "Performance - Time Series Query",
+      "status": "PASS",
+      "execution_time": 0.0008511543273925781,
+      "row_count": 1,
+      "details": "Query executed successfully in 0.001s",
+      "error": null
+    },
+    {
+      "test_name": "Performance - Institution Detail Query",
+      "status": "PASS",
+      "execution_time": 0.0012738704681396484,
+      "row_count": 37,
+      "details": "Query executed successfully in 0.001s",
+      "error": null
+    },
+    {
+      "test_name": "DataPattern - Top Institutions",
+      "status": "FAIL",
+      "execution_time": 0,
+      "row_count": null,
+      "details": null,
+      "error": "column \"total_assets\" does not exist\nLINE 5:             total_assets,\n                    ^\n"
+    },
+    {
+      "test_name": "DataPattern - Segment Analysis",
+      "status": "FAIL",
+      "execution_time": 0,
+      "row_count": null,
+      "details": null,
+      "error": "current transaction is aborted, commands ignored until end of transaction block\n"
+    },
+    {
+      "test_name": "DataPattern - Growth Trends",
+      "status": "FAIL",
+      "execution_time": 0,
+      "row_count": null,
+      "details": null,
+      "error": "current transaction is aborted, commands ignored until end of transaction block\n"
+    }
+  ]
+}

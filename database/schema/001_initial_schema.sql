@@ -213,8 +213,7 @@ SELECT
     ROUND(
         (fd.valor / NULLIF(
             SUM(fd.valor) OVER (
-                PARTITION BY fd.institution_id, tp.id 
-                WHERE rt.categoria = 'Credit'
+                PARTITION BY fd.institution_id, tp.id
             ), 0
         )) * 100, 2
     ) as institution_share_pct
